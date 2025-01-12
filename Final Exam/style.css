@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.top-nav {
+    background-color: #2e2d29;
+    padding: 10px 0;
+    color: white;
+}
+
+.top-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.info-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search {
+    margin-left: 20px;
+}
+
+.search a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.main-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url('Universty.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: -60px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-overlay h1 {
+    color: white;
+    font-size: 96px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.explore-button {
+    background-color: #8c1515;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.explore-button button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.explore-button button::after {
+    content: "▼";
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .info-links {
+        display: none;
+    }
+
+    .main-nav .container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 64px;
+    }
+}
+
+.campus .centered-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8c1515; 
+    text-align: center;
+    margin: 20px 0;
+}
+.image-text-section {
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image-text-container {
+    text-align: center; 
+    width: 300px; 
+    margin: 10px;
+}
+
+.image-text-container img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.image-text-container p {
+    font-size: 1rem;
+    color: #333; 
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.academics .centered-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8c1515; 
+    text-align: center;
+    margin: 20px 0;
+}
+.footer .centered-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8c1515;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0fbfcc;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #000000;
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-links a {
+        margin: 5px 0;
+    }
+}
